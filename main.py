@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #!python2
 
-MajorVersion = "1"
-MinorVersion = "0"
+MajorVersion = "0"
+MinorVersion = "1"
 PatchVersion = "0"
 
 PreReleaseVersionType = "m"
@@ -40,12 +40,18 @@ _PORTFOLIO_     =       "www.prsfx.net"
 _EMAIL_         =       "prana.ronita@gmail.com / prsfx.net@gmail.com"
 _SOCIAL_        =       "@prsfx"
 
-_PROJECTNAME_   =       "prIMOA (Animation Tools) for Maya "
+_PROJECTNAME_   =       "I.B.K. for Maya "
 _VERSION_       =       " v" + MajorVersion + "." + MinorVersion + "." + PatchVersion + " " + PreReleaseVersionType
 
 _ABOUT_         =       "© 2020 | Prana Ronita | @prsfx"
-_LASTMODIFIED_  =       "2020-March-29"
+_LASTMODIFIED_  =       "2020-April-1"
 
 #----------------------------------------------------------------                               ----------------------------------------------------------------#
 
+# import modules
 import os
+import xml.etree.ElementTree as xml
+
+from config.LoDb import *
+from config.LoDb import loadUiType
+from config.LoDb import wrapinstance
