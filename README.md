@@ -8,7 +8,7 @@ Tool python script for animation object in Maya.
 
 . Slider is for slide percentage value from 0% till 100% from two keyframe.
 
-. While each button are represent in-between value from 0% till 100% from two keyframe.
+. Each button are represent in-between value from 0% till 100% from two keyframe.
 
 # Usage
 
