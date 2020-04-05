@@ -35,16 +35,17 @@ SOFTWARE.
 
 #----------------------------------------------------------------                               ----------------------------------------------------------------#
 
-_AUTHOR_        =       "Prana Ronita"
-_PORTFOLIO_     =       "www.prsfx.net"
-_EMAIL_         =       "prana.ronita@gmail.com / prsfx.net@gmail.com"
-_SOCIAL_        =       "@prsfx"
+_author_        =       "Prana Ronita"
+_portfolio_     =       "www.prsfx.net"
+_email_         =       "prana.ronita@gmail.com / prsfx.net@gmail.com"
+_social_        =       "@prsfx"
+_github_        =       "https://github.com/prsfx/ibk-maya"
 
-_PROJECTNAME_   =       "IBK for Maya "
-_VERSION_       =       " v" + MajorVersion + "." + MinorVersion + "." + PatchVersion + " " + PreReleaseVersionType
+_projectname_   =       "IBK for Maya "
+_version_       =       " v" + MajorVersion + "." + MinorVersion + "." + PatchVersion + " " + PreReleaseVersionType
 
-_ABOUT_         =       "© 2020 | Prana Ronita | @prsfx"
-_LASTMODIFIED_  =       "2020-April-1"
+_about_         =       "© 2020 | Prana Ronita | @prsfx"
+_lastmodified_  =       "2020-April-1"
 
 #----------------------------------------------------------------                               ----------------------------------------------------------------#
 
@@ -87,14 +88,14 @@ def isMaya():
         cmds.about(batch=True)
         return True
     except ImportError:
-        return Falses
+        return False
 
 
 # tweener
 def tweenIBK(percentage, slctn=None, attrs=None, selection=True):
-    #valChanged = str(self.ibk_horizontalSlider.value())
 
     if not slctn and not selection:
+        cmds.warning("No object selection...")
         raise ValueError("No object selection...")
 
     if not slctn:
@@ -353,9 +354,9 @@ class ibkToolMixinWindowDock(MayaQWidgetDockableMixin, ibk.ibkUI):
 
         # delete dialog
         """
-        As with close() , 
-        deletes the dialog if the WA_DeleteOnClose flag is set. 
-        If the dialog is the application’s main widget, the application terminates. 
+        As with close() ,
+        deletes the dialog if the WA_DeleteOnClose flag is set.
+        If the dialog is the application’s main widget, the application terminates.
         If the dialog is the last window closed, the lastWindowClosed() signal is emitted.
         """
         self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
@@ -397,8 +398,9 @@ class ibkToolMixinWindowDock(MayaQWidgetDockableMixin, ibk.ibkUI):
         self.show(dockable=True, area="middle", floating=True)
 
         # workspace area
-        cmds.workspaceControl(workspaceControlName, e=True, wp="preferred", mw=282, mh=60)
-       
+        #cmds.workspaceControl(workspaceControlName, e=True, wp="preferred", w=282, h=60)
+        cmds.workspaceControl(workspaceControlName, e=True, dtc=["AttributeEditor", "bottom"], wp="preferred", w=282, h=60)
+
         # raise to window
         self.raise_()
 

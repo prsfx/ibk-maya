@@ -55,9 +55,8 @@ def onMayaDropped():
                 pass
 
         command = """
-import IBK
-from IBK import main as ibkm
-reload(ibkm)
+from IBK import ibk
+ibk.main()
     """.format(path=SourcePath)
 
         shelf = mel.eval('$gShelfTopLevel=$gShelfTopLevel')

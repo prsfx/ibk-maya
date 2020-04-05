@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 #---------------------------------------------------------------------------------------------------------------------#
 
-_HEADER_        =       "_____________________________prsfxTools_____________________________"
+_header_        =       "_____________________________prsfxTools_____________________________"
 
-_AUTHOR_        =       "Prana Ronita"
-_PORTFOLIO_     =       "www.prsfx.net"
-_EMAIL_         =       "prana.ronita@gmail.com / prsfx.net@gmail.com"
-_SOCIAL_        =       "@prsfx"
-_LINK_          =       "https://github.com/prsfx/LoDb"
+_author_        =       "Prana Ronita"
+_porfolio_     =       "www.prsfx.net"
+_email_         =       "prana.ronita@gmail.com / prsfx.net@gmail.com"
+_social_        =       "@prsfx"
+_link_          =       "https://github.com/prsfx/LoDb"
 
-_PROJECTNAME_   =       "LoDb"
-_VERSION_       =       "1.5"
+_projectname_   =       "LoDb"
+_version_       =       "1.5.1"
 
-_ABOUT_         =       "© 2020 | Prana Ronita | @prsfx"
-_LASTMODIFIED_  =       "2020-March-16"
+_about_         =       "© 2020 | Prana Ronita | @prsfx"
+_lastmodified_  =       "2020-March-16"
 
-_FOOTER_        =       "____________________________www.prsfx.net____________________________"
+_footer_        =       "____________________________www.prsfx.net____________________________"
 
 #---------------------------------------------------------------------------------------------------------------------#
 

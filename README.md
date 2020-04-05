@@ -4,7 +4,7 @@ Tool python script for animation object in Maya.
 
 # About
 
-. This script is to create in-between key from 1st frame with second frame.
+. This script is to create in-between key from the 1st frame with the 2nd frame.
 
 . Slider is for slide percentage value from 0% till 100% from two keyframe.
 
@@ -33,7 +33,7 @@ Tool python script for animation object in Maya.
 
     from IBK import install
 
-### 3. If you already installed IBK and want to install it again on another shelf type:
+### 3. If you already installed IBK and want to install it again on another shelf, type:
 
     from IBK import install
     reload(install)
