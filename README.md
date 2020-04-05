@@ -12,7 +12,7 @@ Tool python script for animation object in Maya.
 
 # Usage
 
-## Install/extract IBK folder to:
+## Install/extract "IBK" folder to:
 
     . Linux     = $HOME/maya/scripts
                   or
