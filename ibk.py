@@ -193,6 +193,7 @@ class ibkUI(ibk_form, ibk_base):
 
     # value slider
     def __valueIbkInfoChanged(self, *args):
+        slctn = cmds.ls(sl=True)
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = str(self.ibk_horizontalSlider.value())
 
@@ -205,6 +206,7 @@ class ibkUI(ibk_form, ibk_base):
 
     # value button
     def __000tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 0
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -217,6 +219,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __010tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 10
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -229,6 +232,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __020tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 20
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -241,6 +245,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __030tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 30
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -253,6 +258,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __040tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 40
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -265,6 +271,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __050tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 50
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -277,6 +284,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __060tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 60
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -289,6 +297,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __070tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 70
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -301,6 +310,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __080tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 80
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -313,6 +323,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __090tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 90
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
@@ -325,6 +336,7 @@ class ibkUI(ibk_form, ibk_base):
         cmds.keyframe(slctn, tds=True, t=(CurrentTime, CurrentTime))
 
     def __100tweenButton(self, *args):
+        slctn = cmds.ls(sl=True)
         ValueInput = 100
         CurrentTime = cmds.currentTime(q=True)
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
