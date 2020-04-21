@@ -48,7 +48,7 @@ _about_         =       "© 2020 | Prana Ronita | @prsfx"
 _lastmodified_  =       "2020-April-1"
 
 #----------------------------------------------------------------                               ----------------------------------------------------------------#
-
+print("OROOO")
 """import modules"""
 import os
 import ibk
@@ -137,10 +137,21 @@ def tweenIBK(percentage, slctn=None, attrs=None, selection=True):
         nextValue = cmds.getAttr(attrFull, time=nextFrame)
 
         difference = nextValue - previousValue
-        weightedDifference = (float(difference) * float(percentage)) / 100.0
-        currentValue = previousValue + weightedDifference
 
-        cmds.setKeyframe(attrFull, time=crtm, value=currentValue)
+        try:
+            weightedDifference = (float(difference) * float(percentage)) / 100.0
+        except TypeError:
+            pass
+
+        try:
+            currentValue = previousValue + weightedDifference
+        except UnboundLocalError:
+            pass
+
+        try:
+           cmds.setKeyframe(attrFull, time=crtm, value=currentValue)
+        except UnboundLocalError:
+            pass
 
 #----------------------------------------------------------------                               ----------------------------------------------------------------#
 
@@ -186,7 +197,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = str(self.ibk_horizontalSlider.value())
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -199,7 +210,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -211,7 +222,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -223,7 +234,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -235,7 +246,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -247,7 +258,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -259,7 +270,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -271,7 +282,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -283,7 +294,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -295,7 +306,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -307,7 +318,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 
@@ -319,7 +330,7 @@ class ibkUI(ibk_form, ibk_base):
         ValueChanged = self.ibk_horizontalSlider.setValue(ValueInput)
 
         # check how many value will change
-        print("Slider value changed... " + ValueChanged +"%")
+        print("Slider value changed... " + str(ValueChanged) +"%")
 
         tweenIBK(ValueChanged)
 

@@ -56,6 +56,7 @@ def onMayaDropped():
 
         command = """
 from IBK import ibk
+reload(ibk)
 ibk.main()
     """.format(path=SourcePath)
 
